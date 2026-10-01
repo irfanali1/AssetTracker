@@ -1,8 +1,10 @@
 # About this project
 
-I'm a parent with no background in electronics or software. I'm learning both by solving one real problem: **knowing where my young children are during city excursions**, such as kindergarten trips in Frankfurt.
+**Full disclosure:** I have no background in electronics or software. But what I am full of is curiosity and keenness to learn. So I'm learning about electronics and software by solving one real problem: I am forgetful of my stuff, especially my keys. Instead of just buying a product from the internet, I thought: why don't I just build one? The best part is that I know nothing about how to build one. Hence this page, to document my journey from knowing nothing to building something that I would like to see come alive in the real world.
 
-This is a hobby. It will never be a product. Every choice favours *what teaches me most* and *what is simplest*.
+What I have realised is that I love to solve problems. The problem I am solving is *"How can I find my keys without having to turn my apartment upside down?"* To solve it, I have broken the journey into a set of smaller problems that I must solve. This way, I know where I am headed and how far I have come.
+
+**Note:** This is a hobby. It will never be a product. Every choice favours *what teaches me most* and *what is simplest*.
 
 ## What I'm building
 
