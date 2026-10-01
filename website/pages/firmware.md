@@ -7,7 +7,7 @@ Firmware is the software that runs on the tracker itself, like the apps on a pho
 1. Sleep to save battery until the motion sensor says "we're moving".
 2. Find its location using the **location ladder**: WiFi first, then GPS, then cell towers.
 3. Send the location over the cellular network.
-4. Keep listening for the teacher's beacon. If it is gone for about 2 minutes, switch to alarm mode.
+4. Keep listening for the tether beacon I carry. If it is gone for about 2 minutes, switch to alarm mode.
 
 ## Planned behaviour
 
@@ -19,7 +19,7 @@ stateDiagram-v2
     Send --> Wait: sent
     Wait --> Locate: 30-60 s later
     Wait --> Sleep: no motion for a while
-    Wait --> Alarm: teacher beacon lost ~2 min
+    Wait --> Alarm: tether beacon lost ~2 min
     Alarm --> Alarm: frequent fixes + push alert
     Alarm --> Wait: beacon heard again
 ```

@@ -13,11 +13,11 @@ flowchart TD
     MOT["Motion sensor"] -- "wake up!" --> MCU
     MCU --> WIFI["WiFi scanner<br/>(indoor location)"]
     MCU --> GNSS["GPS receiver<br/>(outdoor location)"]
-    MCU --> BLE["Bluetooth<br/>(hears teacher beacon)"]
+    MCU --> BLE["Bluetooth<br/>(hears tether beacon)"]
     MCU --> CELL["Cellular modem<br/>LTE-M / NB-IoT"]
     SIM["IoT SIM"] --- CELL
     CELL -. "location data" .-> CLOUD["Cloud / Portal"]
-    BEACON["Teacher's beacon"] -. "I'm here" .-> BLE
+    BEACON["Tether beacon<br/>(I carry it)"] -. "I'm here" .-> BLE
 ```
 
 ## Components considered

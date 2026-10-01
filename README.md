@@ -1,6 +1,6 @@
-# DIY Kids' Excursion Tracker
+# DIY Asset Tracker
 
-A hobby learning project: building a small GPS/LTE-M tracker for a child's backpack on city excursions, learning electronics and connectivity along the way.
+A hobby learning project: building a small GPS/LTE-M tracker to find my keys, learning electronics and connectivity along the way.
 
 Project website: https://irfanali1.github.io/AssetTracker/
 

@@ -36,7 +36,7 @@ problems:
   - id: P03
     title: Write the safety and privacy checklist
     area: Safety
-    why: The rules for a device carried by a 2- and 5-year-old must be clear before anything is built.
+    why: Safety and privacy rules must be clear before anything is built.
     status: Pending
     learned: ""
     comments: Free. Turn the non-negotiable rules into a checklist we tick at each hardware step.
@@ -178,7 +178,7 @@ problems:
     date_solved: ""
 
   - id: P19
-    title: Choose a teacher beacon and detect it from the tracker
+    title: Choose a tether beacon and detect it from the tracker
     area: Firmware
     why: The first half of the group tether; needs a purchase proposal first.
     status: Pending
@@ -196,18 +196,18 @@ problems:
     date_solved: ""
 
   - id: P21
-    title: Field test on a pretend excursion (adults only)
+    title: Field test on a real outing
     area: Safety
-    why: Finds the real-world gaps before the device ever goes in a child's backpack.
+    why: Finds the real-world gaps before I rely on it.
     status: Pending
     learned: ""
     comments: ""
     date_solved: ""
 
   - id: P22
-    title: Design a slim, screw-closed, child-safe enclosure
+    title: Design a slim, screw-closed, safe enclosure
     area: Safety
-    why: No loose small parts and no access to the battery for little hands.
+    why: No loose small parts and no easy access to the battery.
     status: Pending
     learned: ""
     comments: ""
@@ -216,7 +216,7 @@ problems:
   - id: P23
     title: Shrink from the dev kit to a credit-card-sized device
     area: Hardware
-    why: The dev kit is a learning tool; the final device must fit a backpack pocket.
+    why: The dev kit is a learning tool; the final device must fit a key ring or pocket.
     status: Pending
     learned: ""
     comments: Hardest step. May split into several problems later.

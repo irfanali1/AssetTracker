@@ -62,3 +62,4 @@ Each technical page ends with a short "Decisions" log: the decision, the options
 - Website page text lives in `website/pages/*.md`. The Problems page and the progress bar are generated; don't edit them by hand.
 - GitHub Actions (`.github/workflows/pages.yml`) rebuilds and publishes the site to GitHub Pages on every push to `main`.
 - Code and notes per area: `hardware/`, `firmware/`, `portal/`. Secrets go in local `.env` files, which are git-ignored.
+- Public story (decided 2026-10-01): the website, README and problem list describe a key finder. Never mention children, ages, schools or excursions in any public page or in `problems.yaml`.

@@ -95,7 +95,7 @@ def header_html(percent, counts, active, current):
         for _, out, label in NAV
     )
     return f"""<header>
-  <div class="title">DIY Kids' Excursion Tracker <span>a learning project</span></div>
+  <div class="title">DIY Asset Tracker <span>a learning project</span></div>
   <nav>{links}</nav>
   <div class="progress" aria-label="Progress {percent}%">
     <div class="bar"><div class="fill" style="width:{percent}%"></div></div>
@@ -112,7 +112,7 @@ def page_html(title, body, header):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{html.escape(title)} | DIY Kids' Excursion Tracker</title>
+<title>{html.escape(title)} | DIY Asset Tracker</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>

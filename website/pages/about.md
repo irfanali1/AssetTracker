@@ -8,13 +8,13 @@ What I have realised is that I love to solve problems. The problem I am solving 
 
 ## What I'm building
 
-A small tracker that lives in a zipped pocket of a child's backpack:
+A small tracker that clips onto my key ring or slips into a bag:
 
 - **Small and slim:** about the size of a credit card, ideally about 1 cm thick.
-- **Trip mode:** sends its location every 30 to 60 seconds for a few hours, then charges overnight.
+- **Live mode:** sends its location every 30 to 60 seconds for a few hours, then charges overnight.
 - **Location ladder:** uses the cheapest way to find itself first. A motion sensor wakes it, then it tries WiFi (works indoors), then GPS (outdoors), then cell towers (rough fallback).
-- **Group tether:** the teacher carries a small Bluetooth beacon. If the tracker loses it for about 2 minutes, it raises an alarm.
-- **Geofence:** an alert if the group leaves the planned destination area.
+- **Tether:** a small Bluetooth beacon that I carry. If the tracker stops hearing it for about 2 minutes, it raises an alarm, so I know I've left my keys behind.
+- **Geofence:** an alert if the tracker leaves an area I choose, such as my home.
 
 ## How I'm learning
 
@@ -22,8 +22,8 @@ The whole project is a [list of problems](problems.html), solved one at a time, 
 
 ## Safety and privacy rules
 
-- No coin-cell batteries, no loose small parts, a rigid enclosure closed with screws, never worn around the neck.
+- No coin-cell batteries and no loose small parts; a rigid enclosure closed with screws.
 - Only a certified LiPo battery with a protection circuit.
 - No microphone or listen-in feature.
 - The tracking portal is private, behind a login.
-- This website never shows my children's names, photos, locations, device or SIM numbers, keys or passwords.
+- This website never shows personal details, photos, locations, device or SIM numbers, keys or passwords.
