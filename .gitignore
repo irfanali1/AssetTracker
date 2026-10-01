@@ -1,0 +1,16 @@
+# Built website (rebuilt automatically by GitHub Actions)
+_site/
+
+# Secrets: never commit these
+.env
+.env.*
+*.pem
+*.key
+secrets/
+
+# Python and editor clutter
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+.vscode/

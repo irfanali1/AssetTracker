@@ -1,0 +1,232 @@
+# The single source of truth for the project.
+# Progress % = Solved / (all problems that are not Parked). It is computed by
+# website/build.py, never by hand.
+#
+# Fields:
+#   id          P01, P02, ... (keep ids stable; new problems get the next free id)
+#   title       short name of the problem
+#   area        Hardware | Firmware | Portal | Website | Safety
+#   why         one line: why it matters
+#   status      Pending | In progress | Solved | Parked
+#   learned     what Irfan learned (filled in when solved)
+#   comments    notes, links, open questions
+#   date_solved YYYY-MM-DD or empty
+#
+# Order: easiest first, hardest last. P01-P05 cost nothing.
+
+problems:
+  - id: P01
+    title: Understand the tracker's block diagram
+    area: Hardware
+    why: Knowing the main parts and how they talk makes every later step make sense.
+    status: Pending
+    learned: ""
+    comments: Free. Walk through the diagram on the Hardware page together.
+    date_solved: ""
+
+  - id: P02
+    title: Learn the radio words (LTE-M, NB-IoT, GNSS, WiFi scan, Bluetooth LE)
+    area: Hardware
+    why: Each radio does one job in the location ladder; mixing them up leads to wrong choices.
+    status: Pending
+    learned: ""
+    comments: Free. One plain sentence per word, then a small quiz.
+    date_solved: ""
+
+  - id: P03
+    title: Write the safety and privacy checklist
+    area: Safety
+    why: The rules for a device carried by a 2- and 5-year-old must be clear before anything is built.
+    status: Pending
+    learned: ""
+    comments: Free. Turn the non-negotiable rules into a checklist we tick at each hardware step.
+    date_solved: ""
+
+  - id: P04
+    title: Publish the project website with a progress bar
+    area: Website
+    why: A public journal keeps the project honest and shows progress over time.
+    status: In progress
+    learned: ""
+    comments: First version built. Solved once it is live on GitHub Pages.
+    date_solved: ""
+
+  - id: P05
+    title: Estimate the battery budget for trip mode
+    area: Hardware
+    why: Decides whether a slim 1 cm device can last a few hours sending location every 30-60 seconds.
+    status: Pending
+    learned: ""
+    comments: Free, pen-and-paper maths. The 1 cm thickness goal is tight; this tells us how tight.
+    date_solved: ""
+
+  - id: P06
+    title: Choose the learning dev kit (Thingy:91 X or alternative)
+    area: Hardware
+    why: The first purchase; it decides which tools and examples we can use.
+    status: Pending
+    learned: ""
+    comments: Compare max 3 options, then Irfan decides. Nothing bought yet.
+    date_solved: ""
+
+  - id: P07
+    title: Choose an IoT SIM and data plan (e.g. 1NCE)
+    area: Hardware
+    why: Without a SIM that supports LTE-M/NB-IoT in Germany the device cannot send anything.
+    status: Pending
+    learned: ""
+    comments: SIM numbers must never appear on the website or in git.
+    date_solved: ""
+
+  - id: P08
+    title: Unbox, charge and power on the kit safely
+    area: Hardware
+    why: First hands-on step; learn how the battery and charging work before any code.
+    status: Pending
+    learned: ""
+    comments: ""
+    date_solved: ""
+
+  - id: P09
+    title: Install the developer tools on the laptop
+    area: Firmware
+    why: Needed to load software onto the device and see what it is doing.
+    status: Pending
+    learned: ""
+    comments: ""
+    date_solved: ""
+
+  - id: P10
+    title: Load a ready-made demo and see a first location in the cloud
+    area: Firmware
+    why: Proves the whole chain (device, SIM, network, cloud) works before writing our own code.
+    status: Pending
+    learned: ""
+    comments: ""
+    date_solved: ""
+
+  - id: P11
+    title: Get a GPS fix outdoors and compare it with my phone
+    area: Firmware
+    why: GPS is the most precise rung of the location ladder outdoors.
+    status: Pending
+    learned: ""
+    comments: ""
+    date_solved: ""
+
+  - id: P12
+    title: Locate the device indoors with a WiFi scan
+    area: Firmware
+    why: Museums and stations block GPS; WiFi scanning still works there.
+    status: Pending
+    learned: ""
+    comments: ""
+    date_solved: ""
+
+  - id: P13
+    title: Use cell towers as a rough fallback location
+    area: Firmware
+    why: The last rung of the ladder when neither GPS nor WiFi gives a fix.
+    status: Pending
+    learned: ""
+    comments: ""
+    date_solved: ""
+
+  - id: P14
+    title: Wake the device with the motion sensor
+    area: Firmware
+    why: Sleeping while still saves most of the battery.
+    status: Pending
+    learned: ""
+    comments: ""
+    date_solved: ""
+
+  - id: P15
+    title: Build trip mode and measure the real battery drain
+    area: Firmware
+    why: Checks the battery estimate from P05 against reality.
+    status: Pending
+    learned: ""
+    comments: ""
+    date_solved: ""
+
+  - id: P16
+    title: See the location on my phone in a private portal with a login
+    area: Portal
+    why: The whole point; and the portal must be private by design.
+    status: Pending
+    learned: ""
+    comments: ""
+    date_solved: ""
+
+  - id: P17
+    title: Get a push alert on my phone
+    area: Portal
+    why: Alarms are useless if I have to keep checking a map.
+    status: Pending
+    learned: ""
+    comments: ""
+    date_solved: ""
+
+  - id: P18
+    title: Geofence alert around the planned destination
+    area: Portal
+    why: Tells me automatically if the group leaves the expected area.
+    status: Pending
+    learned: ""
+    comments: ""
+    date_solved: ""
+
+  - id: P19
+    title: Choose a teacher beacon and detect it from the tracker
+    area: Firmware
+    why: The first half of the group tether; needs a purchase proposal first.
+    status: Pending
+    learned: ""
+    comments: ""
+    date_solved: ""
+
+  - id: P20
+    title: Group tether alarm mode (beacon lost for 2 minutes)
+    area: Firmware
+    why: Detects separation from the group even when the location still looks fine.
+    status: Pending
+    learned: ""
+    comments: ""
+    date_solved: ""
+
+  - id: P21
+    title: Field test on a pretend excursion (adults only)
+    area: Safety
+    why: Finds the real-world gaps before the device ever goes in a child's backpack.
+    status: Pending
+    learned: ""
+    comments: ""
+    date_solved: ""
+
+  - id: P22
+    title: Design a slim, screw-closed, child-safe enclosure
+    area: Safety
+    why: No loose small parts and no access to the battery for little hands.
+    status: Pending
+    learned: ""
+    comments: ""
+    date_solved: ""
+
+  - id: P23
+    title: Shrink from the dev kit to a credit-card-sized device
+    area: Hardware
+    why: The dev kit is a learning tool; the final device must fit a backpack pocket.
+    status: Pending
+    learned: ""
+    comments: Hardest step. May split into several problems later.
+    date_solved: ""
+
+  - id: P24
+    title: Apple Find My / Google Find Hub as a backup
+    area: Hardware
+    why: A free extra safety net that works without our own SIM.
+    status: Parked
+    learned: ""
+    comments: Parked because official access is restricted. Revisit after P21.
+    date_solved: ""
